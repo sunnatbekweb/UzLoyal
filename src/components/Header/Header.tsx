@@ -13,7 +13,7 @@ import Link from "next/link";
 
 const Header = () => {
   return (
-    <header className="fixed top-0 w-full">
+    <header className="fixed top-0 w-full bg-white">
       <div className="container">
         <div className="flex gap-x-10 py-[15px]">
           <div>

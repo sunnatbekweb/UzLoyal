@@ -1,7 +1,15 @@
+import Footer from "@/srccomponents/Footer/Footer";
+import Header from "@/srccomponents/Header/Header";
 import React from "react";
 
 const News = () => {
-  return <div>News</div>;
+  return (
+    <>
+      <Header />
+      <main></main>
+      <Footer />
+    </>
+  );
 };
 
 export default News;

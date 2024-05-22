@@ -1,9 +1,15 @@
-import React from 'react'
+import Footer from "@/srccomponents/Footer/Footer";
+import Header from "@/srccomponents/Header/Header";
+import React from "react";
 
 const Resources = () => {
   return (
-    <div>Resources</div>
-  )
-}
+    <>
+      <Header />
+      <main></main>
+      <Footer />
+    </>
+  );
+};
 
-export default Resources
+export default Resources;
