@@ -1,9 +1,7 @@
-import Header from "@/components/Header/Header";
+import Header from "@/srccomponents/Header/Header";
 
 export default function Home() {
   return (
-    <header>
       <Header />
-    </header>
   );
 }
