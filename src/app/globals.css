@@ -1,3 +1,7 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
 * {
   margin: 0;
   padding: 0;
@@ -9,6 +13,13 @@
   width: 100%;
   margin: 0 auto;
   padding: 0 20px;
+}
+
+.bg-clip {
+  border-left: 2px solid  #ffffff4d;
+  box-shadow: 0 0 0 100vmax #008251;
+  background: #008251;
+  clip-path: inset(0 -100vmax);
 }
 
 @media (min-width: 640px) {
