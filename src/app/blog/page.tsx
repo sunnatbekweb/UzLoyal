@@ -6,7 +6,9 @@ const Blog = () => {
   return (
     <>
       <Header />
-      <main className="mt-[120px] pt-[68px]"></main>
+      <main className="mt-[120px] pt-[68px]">
+        {/* Your code */}
+      </main>
       <Footer />
     </>
   );
