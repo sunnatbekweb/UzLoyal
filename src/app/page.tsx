@@ -146,24 +146,26 @@ export default function Home() {
         </section>
         <section className="pt-[50px]">
           <div className="container">
-              <div className="flex items-end justify-between mb-10">
-                <div className="news_title">
-                  <span className="text-[30px] text-[#cdb091] font-semibold">
-                    News
-                  </span>
-                  <h2 className="text-[40px] text-[#172533] font-semibold">
-                    Latest News Update
-                  </h2>
-                </div>
-                <div>
-                  <Link href="">
-                  < button className="border-2 border-[#7e7e7e] text-[#172533] text-xl font-semibold px-[25px] py-[10px] hover:bg-[#cdb091] hover:border-[#cdb091] duration-200">See All News</button>
-                  </Link>
-                </div>
+            <div className="flex items-end justify-between mb-10">
+              <div className="news_title">
+                <span className="text-[30px] text-[#cdb091] font-semibold">
+                  News
+                </span>
+                <h2 className="text-[40px] text-[#172533] font-semibold">
+                  Latest News Update
+                </h2>
               </div>
               <div>
-                <CardSlider/>
+                <Link href="">
+                  <button className="border-2 border-[#7e7e7e] text-[#172533] text-xl font-semibold px-[25px] py-[10px] hover:bg-[#cdb091] hover:border-[#cdb091] duration-200">
+                    See All News
+                  </button>
+                </Link>
               </div>
+            </div>
+            <div>
+              <CardSlider />
+            </div>
           </div>
         </section>
         <section className="py-[50px]">
@@ -171,43 +173,70 @@ export default function Home() {
             <div className="flex justify-center">
               <div className="bg-[#1e2e3e] p-[60px] w-full md:max-w-[475px]">
                 <div className="mb-[38px]">
-                  <h3 className="contact_info-text font-semibold">Contact Info</h3>
-                  <p className="text-white text-lg leading-[28px] mb-[15px]">You can find more information with these contact information</p>
+                  <h3 className="contact_info-text font-semibold">
+                    Contact Info
+                  </h3>
+                  <p className="text-white text-lg leading-[28px] mb-[15px]">
+                    You can find more information with these contact information
+                  </p>
                 </div>
                 <div className="flex items-center mb-[30px]">
                   <div className="text-[50px] text-white mr-5">
-                  <IoHomeOutline />
+                    <IoHomeOutline />
                   </div>
                   <div>
-                    <h4 className="text-3xl text-white mb-[10px] font-semibold">Office address</h4>
-                    <p className="text-base text-white leading-[23px]">7th Street, Zanjirbogʻ neighborhood, Yakkasaroy district, Tashkent city.</p>
+                    <h4 className="text-3xl text-white mb-[10px] font-semibold">
+                      Office address
+                    </h4>
+                    <p className="text-base text-white leading-[23px]">
+                      7th Street, Zanjirbogʻ neighborhood, Yakkasaroy district,
+                      Tashkent city.
+                    </p>
                   </div>
                 </div>
                 <div className="flex items-center mb-[30px]">
                   <div className="text-[50px] text-white mr-5">
-                  <TbMailOpened />
+                    <TbMailOpened />
                   </div>
                   <div>
-                    <h4 className="text-3xl text-white mb-[10px] font-semibold">Email</h4>
-                    <a href="mailto:loyalxat@gmail.com" className="text-base text-white leading-[23px]">loyalxat@gmail.com</a>
+                    <h4 className="text-3xl text-white mb-[10px] font-semibold">
+                      Email
+                    </h4>
+                    <a
+                      href="mailto:loyalxat@gmail.com"
+                      className="text-base text-white leading-[23px]"
+                    >
+                      loyalxat@gmail.com
+                    </a>
                   </div>
                 </div>
                 <div className="flex items-center mb-[30px]">
                   <div className="text-[50px] text-white mr-5">
-                  <TfiHeadphoneAlt />
+                    <TfiHeadphoneAlt />
                   </div>
                   <div>
-                    <h4 className="text-3xl text-white mb-[10px] font-semibold">Phone number</h4>
-                    <a href="tel:+998901319544" className="text-base text-white leading-[23px]">+998901319544</a>
+                    <h4 className="text-3xl text-white mb-[10px] font-semibold">
+                      Phone number
+                    </h4>
+                    <a
+                      href="tel:+998901319544"
+                      className="text-base text-white leading-[23px]"
+                    >
+                      +998901319544
+                    </a>
                   </div>
                 </div>
                 <div className="flex items-center">
                   <div className="text-[50px] text-white mr-5">
-                  <IoIosClock />
+                    <IoIosClock />
                   </div>
                   <div>
-                    <h4 className="text-3xl text-white mb-[10px] font-semibold">Office Hours</h4>
-                    <p className="text-base text-white leading-[23px]">Mon-Fri from 09:00 to 18:00 Tashkent</p>
+                    <h4 className="text-3xl text-white mb-[10px] font-semibold">
+                      Office Hours
+                    </h4>
+                    <p className="text-base text-white leading-[23px]">
+                      Mon-Fri from 09:00 to 18:00 Tashkent
+                    </p>
                   </div>
                 </div>
               </div>

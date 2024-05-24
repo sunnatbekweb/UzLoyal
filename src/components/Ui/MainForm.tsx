@@ -40,9 +40,7 @@ const MainForm = () => {
           <div className="formErrorText">The message field is required.</div>
         </div>
         <div className="flex justify-center mt-[50px]">
-          <button className="form_button">
-            Submit Now
-          </button>
+          <button className="form_button">Submit Now</button>
         </div>
       </form>
     </div>
