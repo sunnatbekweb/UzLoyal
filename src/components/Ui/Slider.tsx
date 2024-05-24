@@ -22,7 +22,7 @@ const Slider = () => {
       spaceBetween={30}
       loop={true}
       pagination={{
-        clickable: true,
+          clickable: true,
       }}
       navigation={true}
       modules={[Pagination, Navigation]}

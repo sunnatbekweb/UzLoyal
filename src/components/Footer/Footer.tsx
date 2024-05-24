@@ -37,26 +37,29 @@ const Footer = () => {
                 Quick links
               </h2>
               <ul className="list-disc text-white ps-5">
-                <li className='py-[6]'>
+                <li className='py-[6px]'>
                   <Link href={"/"} className="text-base">Home</Link>
                 </li>
-                <li className='py-[6]'>
+                <li className='py-[6px]'>
                   <Link href={"/about"} className="text-base">About us</Link>
                 </li>
-                <li className='py-[6]'>
-                  <Link href={"/contact"} className="text-base">Contact</Link>
+                <li className='py-[6px]'>
+                  <Link href={"/services"} className="text-base">Services</Link>
                 </li>
-                <li className='py-[6]'>
+                <li className='py-[6px]'>
                   <Link href={"/blog"} className="text-base">Our publications</Link>
                 </li>
-                <li className='py-[6]'>
+                <li className='py-[6px]'>
                   <Link href={"/news"}>News</Link>
                 </li>
-                <li className='py-[6]'>
-                  <Link href={"/library"}>Legal library</Link>
+                <li className='py-[6px]'>
+                  <Link href={"/resources"}>Document sapmles</Link>
                 </li>
-                <li className='py-[6]'>
-                  <Link href={"/services"}>News</Link>
+                <li className='py-[6px]'>
+                  <Link href={"/faq"}>FAQ</Link>
+                </li>
+                <li className='py-[6px]'>
+                  <Link href={"/contact"}>Contact</Link>
                 </li>
               </ul>
             </div>
@@ -64,27 +67,24 @@ const Footer = () => {
               <h2 className='text-white text-[25px] mb-[30px]'>
                 Services
               </h2>
-              <ul className="list-disc text-white ps-5">
-                <li className='py-[6]'>
-                  <Link href={"/"} className="text-base">Home</Link>
+              <ul className="list-disc text-base text-white ps-5">
+                <li className='py-[6px]'>
+                  <Link href={"/contact"} className="text-base">Family law</Link>
                 </li>
-                <li className='py-[6]'>
-                  <Link href={"/about"} className="text-base">About us</Link>
+                <li className='py-[6px]'>
+                  <Link href={"/contact"} className="text-base">Personal Injury</Link>
                 </li>
-                <li className='py-[6]'>
-                  <Link href={"/contact"} className="text-base">Contact</Link>
+                <li className='py-[6px]'>
+                  <Link href={"/contact"} className="text-base">Criminal law</Link>
                 </li>
-                <li className='py-[6]'>
-                  <Link href={"/blog"} className="text-base">Our publications</Link>
+                <li className='py-[6px]'>
+                  <Link href={"/contact"} className="text-base">Education law</Link>
                 </li>
-                <li className='py-[6]'>
-                  <Link href={"/news"}>News</Link>
+                <li className='py-[6px]'>
+                  <Link href={"/contact"}>Business law</Link>
                 </li>
-                <li className='py-[6]'>
-                  <Link href={"/library"}>Legal library</Link>
-                </li>
-                <li className='py-[6]'>
-                  <Link href={"/services"}>News</Link>
+                <li className='py-[6px]'>
+                  <Link href={"/contact"}>Real Estate law</Link>
                 </li>
               </ul>
             </div>
