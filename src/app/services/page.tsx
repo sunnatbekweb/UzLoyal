@@ -1,6 +1,6 @@
 import React from "react";
 import Header from "@/srccomponents/Header/Header";
-import './services.css'
+
 
 const Services = () => {
   return (
