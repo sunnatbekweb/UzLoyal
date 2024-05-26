@@ -14,6 +14,7 @@ import "@/srcstyles/swiper.css";
 
 // import required modules
 import { Pagination, Navigation } from "swiper/modules";
+import Image from "next/image";
 
 const Slider = () => {
   return (
@@ -30,31 +31,31 @@ const Slider = () => {
     >
       <SwiperSlide>
         <div className="w-[320px] h-[300px] grid place-content-center object-cover bg-[rgba(16,25,46,.644)] overflow-hidden shadow-md shadow-black relative my-5">
-            <img src={sliderimage.src} className="absolute top-0 left-0 -z-10" alt="Slider image" />
+            <Image width={430} height={250} src={sliderimage.src} className="absolute top-0 left-0 -z-10" alt="Slider image" />
             <h2 className="text-[22px] text-center text-white px-[30px]">Registration of permitting procedures for a foreign worker</h2>
         </div>
       </SwiperSlide>
       <SwiperSlide>
         <div className="w-[320px] h-[300px] grid place-content-center object-cover bg-[rgba(16,25,46,.644)] overflow-hidden shadow-md shadow-black relative my-5">
-            <img src={sliderimage.src} className="absolute top-0 left-0 -z-10" alt="Slider image" />
+            <Image width={430} height={250} src={sliderimage.src} className="absolute top-0 left-0 -z-10" alt="Slider image" />
             <h2 className="text-[22px] text-center text-white px-[30px]">Registration of permitting procedures for a foreign worker</h2>
         </div>
       </SwiperSlide>      
       <SwiperSlide>
         <div className="w-[320px] h-[300px] grid place-content-center object-cover bg-[rgba(16,25,46,.644)] overflow-hidden shadow-md shadow-black relative my-5">
-            <img src={sliderimage.src} className="absolute top-0 left-0 -z-10" alt="Slider image" />
+            <Image width={430} height={250} src={sliderimage.src} className="absolute top-0 left-0 -z-10" alt="Slider image" />
             <h2 className="text-[22px] text-center text-white px-[30px]">Registration of permitting procedures for a foreign worker</h2>
         </div>
       </SwiperSlide>
       <SwiperSlide>
         <div className="w-[320px] h-[300px] grid place-content-center object-cover bg-[rgba(16,25,46,.644)] overflow-hidden shadow-md shadow-black relative my-5">
-            <img src={sliderimage.src} className="absolute top-0 left-0 -z-10" alt="Slider image" />
+            <Image width={430} height={250} src={sliderimage.src} className="absolute top-0 left-0 -z-10" alt="Slider image" />
             <h2 className="text-[22px] text-center text-white px-[30px]">Registration of permitting procedures for a foreign worker</h2>
         </div>
       </SwiperSlide>     
       <SwiperSlide>
         <div className="w-[320px] h-[300px] grid place-content-center object-cover bg-[rgba(16,25,46,.644)] overflow-hidden shadow-md shadow-black relative my-5">
-            <img src={sliderimage.src} className="absolute top-0 left-0 -z-10" alt="Slider image" />
+            <Image width={430} height={250} src={sliderimage.src} className="absolute top-0 left-0 -z-10" alt="Slider image" />
             <h2 className="text-[22px] text-center text-white px-[30px]">Registration of permitting procedures for a foreign worker</h2>
         </div>
       </SwiperSlide>

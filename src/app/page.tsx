@@ -11,6 +11,7 @@ import { IoHomeOutline } from "react-icons/io5";
 import { TbMailOpened } from "react-icons/tb";
 import { TfiHeadphoneAlt } from "react-icons/tfi";
 import { IoIosClock } from "react-icons/io";
+import Image from "next/image";
 
 export default function Home() {
   return (
@@ -42,7 +43,7 @@ export default function Home() {
             <div className="grid grid-cols-3 gap-10">
               <div className="rounded-xl overflow-hidden">
                 <div>
-                  <img src={cardImage.src} alt="Card image" />
+                  <Image width={430} height={250} src={cardImage.src} alt="Card image" />
                 </div>
                 <div className="py-[30px]">
                   <ul className="flex items-center gap-x-10 text-[#bebebe] text-lg mb-5">
@@ -61,7 +62,7 @@ export default function Home() {
               </div>
               <div className="rounded-xl overflow-hidden">
                 <div>
-                  <img src={cardImage.src} alt="Card image" />
+                  <Image width={430} height={250} src={cardImage.src} alt="Card image" />
                 </div>
                 <div className="py-[30px]">
                   <ul className="flex items-center gap-x-10 text-[#bebebe] text-lg mb-5">
@@ -80,7 +81,7 @@ export default function Home() {
               </div>
               <div className="rounded-xl overflow-hidden">
                 <div>
-                  <img src={cardImage.src} alt="Card image" />
+                  <Image width={430} height={250} src={cardImage.src} alt="Card image" />
                 </div>
                 <div className="py-[30px]">
                   <ul className="flex items-center gap-x-10 text-[#bebebe] text-lg mb-5">
@@ -135,7 +136,9 @@ export default function Home() {
                 </article>
               </div>
               <div className="p-5 border border-[#cee0f2]">
-                <img
+                <Image
+                  width={530}
+                  height={675}
                   src={aboutImage.src}
                   alt="About image"
                   className="min-w-[450px]"

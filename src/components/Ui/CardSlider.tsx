@@ -4,7 +4,6 @@ import cardImage from "@/publicarticleCard_image.jpeg";
 import React from "react";
 // Import Swiper React components
 import { Swiper, SwiperSlide } from "swiper/react";
-import sliderimage from "@/publiccarousel_image.jpeg";
 
 // Import Swiper styles
 import "swiper/css";
@@ -15,6 +14,7 @@ import "@/srcstyles/cardSwiper.css";
 
 // import required modules
 import { Pagination, Navigation } from "swiper/modules";
+import Image from "next/image";
 
 const CardSlider = () => {
   return (
@@ -32,7 +32,7 @@ const CardSlider = () => {
       <SwiperSlide>
         <div className="rounded-xl overflow-hidden pb-[60px]">
           <div>
-            <img src={cardImage.src} alt="Card image" />
+            <Image width={430} height={250} src={cardImage.src} alt="Card image" />
           </div>
           <div className="py-[30px]">
             <ul className="flex items-center gap-x-10 text-[#bebebe] text-lg mb-5">
@@ -51,7 +51,7 @@ const CardSlider = () => {
       <SwiperSlide>
         <div className="rounded-xl overflow-hidden pb-[60px]">
           <div>
-            <img src={cardImage.src} alt="Card image" />
+            <Image width={430} height={250} src={cardImage.src} alt="Card image" />
           </div>
           <div className="py-[30px]">
             <ul className="flex items-center gap-x-10 text-[#bebebe] text-lg mb-5">
@@ -70,7 +70,7 @@ const CardSlider = () => {
       <SwiperSlide>
         <div className="rounded-xl overflow-hidden pb-[60px]">
           <div>
-            <img src={cardImage.src} alt="Card image" />
+            <Image width={430} height={250} src={cardImage.src} alt="Card image" />
           </div>
           <div className="py-[30px]">
             <ul className="flex items-center gap-x-10 text-[#bebebe] text-lg mb-5">
@@ -89,7 +89,7 @@ const CardSlider = () => {
       <SwiperSlide>
         <div className="rounded-xl overflow-hidden pb-[60px]">
           <div>
-            <img src={cardImage.src} alt="Card image" />
+            <Image width={430} height={250} src={cardImage.src} alt="Card image" />
           </div>
           <div className="py-[30px]">
             <ul className="flex items-center gap-x-10 text-[#bebebe] text-lg mb-5">
@@ -108,7 +108,7 @@ const CardSlider = () => {
       <SwiperSlide>
         <div className="rounded-xl overflow-hidden pb-[60px]">
           <div>
-            <img src={cardImage.src} alt="Card image" />
+            <Image width={430} height={250} src={cardImage.src} alt="Card image" />
           </div>
           <div className="py-[30px]">
             <ul className="flex items-center gap-x-10 text-[#bebebe] text-lg mb-5">
