@@ -85,7 +85,7 @@ export default function Home() {
                 </h3>
                 <article className="about_text">
                   <p>
-                    Law Firm 'LOYAL' provides professional legal services to businesses (private entrepreneurs, companies and firms, LLCs, PJSCs, organizations of all forms of ownership) throughout the Republic of Uzbekistan. By contacting the LOYAL law office, you can count on qualified prompt assistance in protecting your rights and complete confidentiality of the information provided.
+                    Law Firm LOYAL provides professional legal services to businesses (private entrepreneurs, companies and firms, LLCs, PJSCs, organizations of all forms of ownership) throughout the Republic of Uzbekistan. By contacting the LOYAL law office, you can count on qualified prompt assistance in protecting your rights and complete confidentiality of the information provided.
                   </p>
                   <br />
                   <p>
