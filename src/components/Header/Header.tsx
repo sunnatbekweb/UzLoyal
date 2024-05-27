@@ -13,7 +13,7 @@ import Link from "next/link";
 
 const Header = () => {
   return (
-    <header className="fixed top-0 w-full bg-white">
+    <header className="fixed top-0 w-full bg-white z-50">
       <div className="container">
         <div className="flex gap-x-10 py-[15px] ">
           <div>
@@ -70,10 +70,10 @@ const Header = () => {
               <Link href={"/library"}>Legal library</Link>
             </li>
             <li className="py-5 px-[10px]">
-              <Link href={"/services"}>News</Link>
+              <Link href={"/services"}>Services</Link>
             </li>
             <li className="py-5 px-[10px]">
-              <Link href={"/resources"}>News</Link>
+              <Link href={"/resources"}>Document samples</Link>
             </li>
           </ul>
         </div>
