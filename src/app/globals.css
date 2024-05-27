@@ -24,9 +24,6 @@
   clip-path: inset(0 -100vmax);
 }
 
-.library-img {
-  background-image: url("../../public/pages\ img.jpg");
-}
  .box_shadow {
   box-shadow: 0 2px 20px black;
 }
@@ -177,9 +174,6 @@ form {
   }
 }
 
-
-/* Home page styles end */
-
 /* Service page styles */
 
 .service-fon {
@@ -189,6 +183,14 @@ form {
   background-size: cover;
   background-repeat: no-repeat;
 }
+
+/* Libraray page styles */
+
+.library-img {
+  background-image: url("../../public/pages\ img.jpg");
+}
+
+/* Responsive styles */
 
 @media (min-width: 640px) {
   .container {

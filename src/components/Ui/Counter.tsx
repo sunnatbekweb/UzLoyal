@@ -10,7 +10,7 @@ interface CounterProps {
 }
 
 const Counter: React.FC<CounterProps> = ({ countEnd, text, symbol }) => {
-  const [count, setCount] = useState<boolean>(false);
+  const [count, setCount] = useState<boolean>(false);  
 
   return (
     <ScrollTrigger
