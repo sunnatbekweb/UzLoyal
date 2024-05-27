@@ -24,7 +24,10 @@
   clip-path: inset(0 -100vmax);
 }
 
-.box_shadow {
+.library-img {
+  background-image: url("../../public/pages\ img.jpg");
+}
+ .box_shadow {
   box-shadow: 0 2px 20px black;
 }
 
