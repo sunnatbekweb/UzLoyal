@@ -6,7 +6,9 @@ const About = () => {
   return (
     <>
       <Header />
-      <main></main>
+      <main className="mt-[120px] md:pt-[68px]">
+        {/* Your code */}
+      </main>
       <Footer />
     </>
   );
