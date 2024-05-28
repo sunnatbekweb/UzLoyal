@@ -1,4 +1,6 @@
-import React from "react";
+"use client";
+
+import React, { useState } from "react";
 import logo from "@/publiclogo.png";
 import uz from "@/publiclang_uz.png";
 import eng from "@/publiclang_eng.png";
@@ -11,11 +13,71 @@ import { AiOutlineFacebook } from "react-icons/ai";
 import { FaInstagram } from "react-icons/fa";
 import { HiOutlineMenu } from "react-icons/hi";
 import Link from "next/link";
+import { Drawer } from "antd";
 
 const Header = () => {
+  const [open, setOpen] = useState(false);
+
+  const showDrawer = () => {
+    setOpen(true);
+  };
+
+  const onClose = () => {
+    setOpen(false);
+  };
+
   return (
     <header className="fixed top-0 w-full bg-white z-50 shadow">
       <div className="container">
+        <Drawer title="" onClose={onClose} open={open} style={{background:"#008251", color:"#ffffff"}}>
+          <ul>
+            <li className="px-[35px] py-3 sm:hidden">
+              <Link href="/" className="text-base font-semibold">
+                Home
+              </Link>
+            </li>
+            <li className="px-[35px] py-3 sm:hidden">
+              <Link href="/about" className="text-base font-semibold">
+                About us
+              </Link>
+            </li>
+            <li className="px-[35px] py-3">
+              <Link href="/services" className="text-base font-semibold">
+                Services
+              </Link>
+            </li>
+            <li className="px-[35px] py-3 sm:hidden">
+              <Link href="/blog" className="text-base font-semibold">
+                Our publications
+              </Link>
+            </li>
+            <li className="px-[35px] py-3">
+              <Link href="/news" className="text-base font-semibold">
+                News
+              </Link>
+            </li>
+            <li className="px-[35px] py-3">
+              <Link href="/faq" className="text-base font-semibold">
+                FAQ
+              </Link>
+            </li>
+            <li className="px-[35px] py-3">
+              <Link href="/library" className="text-base font-semibold">
+                Legal library
+              </Link>
+            </li>
+            <li className="px-[35px] py-3">
+              <Link href="/resources" className="text-base font-semibold">
+                Document samples
+              </Link>
+            </li>
+            <li className="px-[35px] py-3 sm:hidden">
+              <Link href="/contact" className="text-base font-semibold">
+                Contact
+              </Link>
+            </li>
+          </ul>
+        </Drawer>
         <div className="flex  items-center md:items-start gap-x-5 gmd:ap-x-10 py-[15px] ">
           <div>
             <Image width={90} height={90} src={logo} alt="Logo" />
@@ -61,7 +123,7 @@ const Header = () => {
               <div className="w-[250px] hidden lg:flex"></div>
             </div>
           </div>
-          <div className="text-2xl flex md:hidden items-center">
+          <div className="text-2xl flex md:hidden items-center" onClick={showDrawer}>
             <HiOutlineMenu className="cursor-pointer" />
           </div>
         </div>
