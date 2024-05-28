@@ -189,6 +189,7 @@ form {
 
 .library-img {
   background-image: url("../../public/pages\ img.jpg");
+  width: 100%;
 }
 
 /* Responsive styles */
