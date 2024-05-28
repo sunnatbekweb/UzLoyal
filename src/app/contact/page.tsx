@@ -6,7 +6,7 @@ const Contact = () => {
   return (
     <>
       <Header />
-      <main className="mt-[120px] pt-[68px]">
+      <main className="mt-[120px] md:pt-[68px]">
         {/* Your code */}
       </main>
       <Footer />

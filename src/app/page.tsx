@@ -3,7 +3,6 @@ import Header from "@/src/components/Header/Header";
 import Slider from "@/src/components/Ui/Slider";
 import Counter from "@/src/components/Ui/Counter";
 import MainForm from "@/src/components/Ui/MainForm";
-import cardImage from "@/public/articleCard_image.jpeg";
 import aboutImage from "@/public/about_image.jpg";
 import Link from "next/link";
 import CardSlider from "@/src/components/Ui/CardSlider";
@@ -17,7 +16,7 @@ export default function Home() {
   return (
     <>
       <Header />
-      <main className="mt-[120px] pt-[68px]">
+      <main className="mt-[120px] md:pt-[68px]">
         <section id="hero">
           <div className="container">
             <Slider />
@@ -40,33 +39,8 @@ export default function Home() {
               </span>
               <h2 className="articles_title">Latest Article Update</h2>
             </div>
-            <div className="grid grid-cols-3 gap-10">
-              {[1, 2, 3].map((item) => (
-                <div key={item} className="rounded-xl overflow-hidden">
-                  <div>
-                    <Image
-                      width={430}
-                      height={250}
-                      src={cardImage.src}
-                      alt="Card image"
-                    />
-                  </div>
-                  <div className="py-[30px]">
-                    <ul className="flex items-center gap-x-10 text-[#bebebe] text-lg mb-5">
-                      <li>2023-12-05</li>
-                      <li className="list-disc">Xushnudbek Xudoyberdiyev</li>
-                    </ul>
-                    <h2 className="text-[#1e2e3e] text-[26px] font-medium mb-[25px] leading-9">
-                      <Link href="#">
-                        Onix and Tracker cars withdrawn from sale
-                      </Link>
-                    </h2>
-                    <Link href="#" className="read_more-btn">
-                      Read more
-                    </Link>
-                  </div>
-                </div>
-              ))}
+            <div className="">
+              <CardSlider/>
             </div>
           </div>
         </section>
@@ -78,28 +52,26 @@ export default function Home() {
               </span>
               <h2 className="articles_title">Why choose us</h2>
             </div>
-            <div className="flex items-center justify-between gap-x-[200px]">
-              <div>
-                <h3 className="text-[#1e2e3e] text-[30px] font-semibold mb-[30px]">
+            <div className="flex flex-col lg:flex-row items-center justify-between gap-x-[120px] xl:gap-x-[200px]">
+              <div className="mb-10 lg:mb-0">
+                <h3 className="text-[#1e2e3e] text-[25px] md:text-[30px] font-semibold mb-[30px]">
                   We are the best legal firm that can provide you with comprehensive assistance!
                 </h3>
                 <article className="about_text">
                   <p>
-                    Law Firm LOYAL provides professional legal services to businesses (private entrepreneurs, companies and firms, LLCs, PJSCs, organizations of all forms of ownership) throughout the Republic of Uzbekistan. By contacting the LOYAL law office, you can count on qualified prompt assistance in protecting your rights and complete confidentiality of the information provided.
+                    &nbsp;&nbsp;&nbsp; Law Firm LOYAL provides professional legal services to businesses (private entrepreneurs, companies and firms, LLCs, PJSCs, organizations of all forms of ownership) throughout the Republic of Uzbekistan. By contacting the LOYAL law office, you can count on qualified prompt assistance in protecting your rights and complete confidentiality of the information provided.
                   </p>
                   <br />
                   <p>
-                    You can always be sure that your case is being handled by a professional who specializes in providing legal services to businesses, has sufficient knowledge and experience in this area, is equally well versed in economics and law, and knows all the intricacies of organizing and running a business.
+                  &nbsp;&nbsp;&nbsp; You can always be sure that your case is being handled by a professional who specializes in providing legal services to businesses, has sufficient knowledge and experience in this area, is equally well versed in economics and law, and knows all the intricacies of organizing and running a business.
                   </p>
                 </article>
               </div>
-              <div className="p-5 border border-[#cee0f2]">
-                <Image
-                  width={530}
-                  height={675}
+              <div className="p-5 border border-[#cee0f2] w-full">
+                <img
                   src={aboutImage.src}
                   alt="About image"
-                  className="min-w-[450px]"
+                  className="w-full lg:min-w-[345px] lg:h-[440px] xl:min-w-[530px] xl:h-[675px]"
                 />
               </div>
             </div>
@@ -107,12 +79,12 @@ export default function Home() {
         </section>
         <section className="pt-[50px]">
           <div className="container">
-            <div className="flex items-end justify-between mb-10">
-              <div className="news_title">
+            <div className="flex items-start md:items-end flex-col md:flex-row justify-between mb-10">
+              <div className="news_title mb-10 md:mb-0">
                 <span className="text-[30px] text-[#cdb091] font-semibold">
                   News
                 </span>
-                <h2 className="text-[40px] text-[#172533] font-semibold">
+                <h2 className="text-[32px] md:text-[40px] text-[#172533] font-bold">
                   Latest News Update
                 </h2>
               </div>
@@ -131,70 +103,70 @@ export default function Home() {
         </section>
         <section className="py-[50px]">
           <div className="container">
-            <div className="flex justify-center">
-              <div className="bg-[#1e2e3e] p-[60px] w-full md:max-w-[475px]">
+            <div className="flex flex-col lg:flex-row justify-center">
+              <div className="bg-[#1e2e3e] p-5 md:p-[60px] w-full lg:max-w-[475px] mb-[50px] lg:mb-0">
                 <div className="mb-[38px]">
-                  <h3 className="contact_info-text font-semibold">
+                  <h3 className="contact_info-text font-semibold text-center sm:text-start">
                     Contact Info
                   </h3>
-                  <p className="text-white text-lg leading-[28px] mb-[15px]">
+                  <p className="text-white text-base md:text-lg leading-[28px] mb-[15px] text-center sm:text-start">
                     You can find more information with these contact information
                   </p>
                 </div>
-                <div className="flex items-center mb-[30px]">
+                <div className="flex items-center mb-[30px] flex-col sm:flex-row">
                   <div className="text-[50px] text-white mr-5">
                     <IoHomeOutline />
                   </div>
                   <div>
-                    <h4 className="text-3xl text-white mb-[10px] font-semibold">
+                    <h4 className="text-[22px] md:text-3xl text-white mb-[10px] font-semibold text-center sm:text-start">
                       Office address
                     </h4>
-                    <p className="text-base text-white leading-[23px]">
+                    <p className="text-base text-white leading-[23px] text-center sm:text-start">
                       7th Street, Zanjirbogʻ neighborhood, Yakkasaroy district, Tashkent city.
                     </p>
                   </div>
                 </div>
-                <div className="flex items-center mb-[30px]">
+                <div className="flex items-center mb-[30px] flex-col sm:flex-row">
                   <div className="text-[50px] text-white mr-5">
                     <TbMailOpened />
                   </div>
                   <div>
-                    <h4 className="text-3xl text-white mb-[10px] font-semibold">
+                    <h4 className="text-[22px] md:text-3xl text-white mb-[10px] font-semibold text-center sm:text-start">
                       Email
                     </h4>
                     <a
                       href="mailto:loyalxat@gmail.com"
-                      className="text-base text-white leading-[23px]"
+                      className="text-base text-white leading-[23px] text-center sm:text-start"
                     >
                       loyalxat@gmail.com
                     </a>
                   </div>
                 </div>
-                <div className="flex items-center mb-[30px]">
+                <div className="flex items-center mb-[30px] flex-col sm:flex-row">
                   <div className="text-[50px] text-white mr-5">
                     <TfiHeadphoneAlt />
                   </div>
                   <div>
-                    <h4 className="text-3xl text-white mb-[10px] font-semibold">
+                    <h4 className="text-[22px] md:text-3xl text-white mb-[10px] font-semibold text-center sm:text-start">
                       Phone number
                     </h4>
                     <a
                       href="tel:+998901319544"
-                      className="text-base text-white leading-[23px]"
+                      className="text-base text-white leading-[23px] text-center sm:text-start"
                     >
                       +998901319544
                     </a>
                   </div>
                 </div>
-                <div className="flex items-center">
+                <div className="flex items-center flex-col sm:flex-row">
                   <div className="text-[50px] text-white mr-5">
                     <IoIosClock />
                   </div>
                   <div>
-                    <h4 className="text-3xl text-white mb-[10px] font-semibold">
+                    <h4 className="text-[22px] md:text-3xl text-white mb-[10px] font-semibold text-center sm:text-start">
                       Office Hours
                     </h4>
-                    <p className="text-base text-white leading-[23px]">
+                    <p className="text-base text-white leading-[23px] text-center sm:text-start">
                       Mon-Fri from 09:00 to 18:00 Tashkent
                     </p>
                   </div>

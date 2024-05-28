@@ -8,7 +8,7 @@ const Library = () => {
   return (
     <>
       <Header />
-      <main className="mt-[120px] pt-[48px]">
+      <main className="mt-[120px] md:pt-[48px]">
         <div className="library-img">
           <div className="md:px-[150px] md:py-[150px]">
             <h3 className="text-[40px] font-bold text-white">LEGAL LIBRARY</h3>
@@ -23,7 +23,7 @@ const Library = () => {
           <div className="w-[700px] h-[700px] bg-white shadow-2xl shadow-indigo-500/40 rounded-md p-[50px]">
             <div className="flex justify-start gap-5">
               <img
-                src={puzzle}
+                src={puzzle.src}
                 className="w-[50px] h-[50px]"
                 alt="puzzle icon"
               />
@@ -44,7 +44,7 @@ const Library = () => {
           <div className="w-[700px] h-[700px] bg-white shadow-2xl shadow-indigo-500/40 rounded-md p-[50px]">
             <div className="flex justify-start gap-5">
               <img
-                src={puzzle}
+                src={puzzle.src}
                 className="w-[50px] h-[50px]"
                 alt="puzzle icon"
               />

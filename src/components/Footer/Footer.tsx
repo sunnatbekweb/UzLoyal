@@ -9,8 +9,8 @@ const Footer = () => {
     <footer className='bg-[#008251]'>
       <div className='py-20'>
         <div className="container">
-          <div className='flex'>
-            <div className='w-[25%]'>
+          <div className='grid gird-cold-1 md:grid-cols-2 lg:grid-cols-3 gap-y-10'>
+            <div className='w-fit'>
               <h2 className='text-white text-4xl mb-[30px]'>
                 <Link href={"/"}>
                   LOYAL <br />
@@ -32,7 +32,7 @@ const Footer = () => {
                 </div>
               </div>
             </div>
-            <div className='w-[25%] ml-24'>
+            <div className='w-fit md:ml-24'>
               <h2 className='text-white text-[25px] mb-[30px]'>
                 Quick links
               </h2>
@@ -63,7 +63,7 @@ const Footer = () => {
                 </li>
               </ul>
             </div>
-            <div className='w-[25%]'>
+            <div className='w-fit'>
               <h2 className='text-white text-[25px] mb-[30px]'>
                 Services
               </h2>
@@ -93,6 +93,23 @@ const Footer = () => {
       </div>
       <div className='py-5'>
         <div className="container">
+          <div className="border-t border-[#30465c] flex flex-col md:flex-row gap-y-5 items-center justify-between py-5 text-[15px] text-[#d9d9d9]">
+            <p className='text-center'>Copyright © 2023 Loyal.uz. All rights reserved.</p>
+            <div className="flex flex-col gap-y-2 sm:flex-row items-center gap-x-5">
+              <Link href="/privacy">
+                Privace & Policy
+              </Link>
+              <Link href="/terms">
+                Terms
+              </Link>
+              <Link href="/about">
+                About us
+              </Link>
+              <Link href="/faq">
+                FAQ
+              </Link>
+            </div>
+          </div>
         </div>
       </div>
     </footer>

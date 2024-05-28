@@ -2,10 +2,10 @@ import React from "react";
 
 const MainForm = () => {
   return (
-    <div className="bg-[#ad9071] p-[50px] w-full md:max-w-[475px]">
+    <div className="bg-[#ad9071] p-5 md:p-[50px] w-full lg:max-w-[475px]">
       <div className="flex flex-col items-center mb-[50px]">
         <span className="text-xl text-white">Contact us</span>
-        <h3 className="text-[40px] text-white font-semibold">Consultation</h3>
+        <h3 className="text-[30px] md:text-[40px] text-white font-semibold">Consultation</h3>
       </div>
       <form>
         <div>

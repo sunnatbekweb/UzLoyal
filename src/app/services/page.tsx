@@ -6,7 +6,7 @@ const Services = () => {
   return (
     <>
       <Header />
-      <main className="mt-[120px] py-[68px]">
+      <main className="mt-[120px] md:py-[68px]">
         <div className="service-fon">
           <div className="container">
             <div className=" pt-[15%]">

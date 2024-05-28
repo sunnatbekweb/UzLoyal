@@ -7,7 +7,7 @@ const Resources = () => {
   return (
     <>
       <Header />
-      <main className="mt-[120px] pt-[68px]">
+      <main className="mt-[120px] md:pt-[68px]">
         <div className="service-fon">
           <div className="container">
             <div className=" pt-[15%]">
