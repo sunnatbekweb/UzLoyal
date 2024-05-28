@@ -19,11 +19,11 @@ const Library = () => {
             </span>
           </div>
         </div>
-        <div className="flex justify-center md:gap-20 my-20">
+        <div className="flex flex-col md:flex-row justify-center md:gap-20 my-20">
           <div className="w-[700px] h-[700px] bg-white shadow-2xl shadow-indigo-500/40 rounded-md p-[50px]">
             <div className="flex justify-start gap-5">
               <img
-                src={puzzle}
+                src={puzzle.src}
                 className="w-[50px] h-[50px]"
                 alt="puzzle icon"
               />
@@ -44,7 +44,7 @@ const Library = () => {
           <div className="w-[700px] h-[700px] bg-white shadow-2xl shadow-indigo-500/40 rounded-md p-[50px]">
             <div className="flex justify-start gap-5">
               <img
-                src={puzzle}
+                src={puzzle.src}
                 className="w-[50px] h-[50px]"
                 alt="puzzle icon"
               />
