@@ -13,7 +13,42 @@ import { AiOutlineFacebook } from "react-icons/ai";
 import { FaInstagram } from "react-icons/fa";
 import { HiOutlineMenu } from "react-icons/hi";
 import Link from "next/link";
-import { Drawer } from "antd";
+import { Drawer, Dropdown, Space  } from "antd";
+import type { MenuProps } from 'antd';
+
+const items: MenuProps['items'] = [
+  {
+    key: '1',
+    label: (
+      <ul className="sub-menu">
+                <li>
+                  <Link href="/services">corporate disputes</Link>
+                </li>
+                <li>
+                  <Link href="/services">corporate disputes</Link>
+                </li>
+                <li>
+                  <Link href="/services">corporate disputes</Link>
+                </li>
+                <li>
+                  <Link href="/services">corporate disputes</Link>
+                </li>
+                <li>
+                  <Link href="/services">corporate disputes</Link>
+                </li>
+                <li>
+                  <Link href="/services">corporate disputes</Link>
+                </li>
+                <li>
+                  <Link href="/services">corporate disputes</Link>
+                </li>
+                <li>
+                  <Link href="/services">corporate disputes</Link>
+                </li>
+              </ul>
+    ),
+  },
+];
 
 const Header = () => {
   const [open, setOpen] = useState(false);
@@ -29,7 +64,12 @@ const Header = () => {
   return (
     <header className="fixed top-0 w-full bg-white z-50 shadow">
       <div className="container">
-        <Drawer title="" onClose={onClose} open={open} style={{background:"#008251", color:"#ffffff"}}>
+        <Drawer
+          title=""
+          onClose={onClose}
+          open={open}
+          style={{ background: "#008251", color: "#ffffff" }}
+        >
           <ul>
             <li className="px-[35px] py-3 sm:hidden">
               <Link href="/" className="text-base font-semibold">
@@ -80,7 +120,9 @@ const Header = () => {
         </Drawer>
         <div className="flex  items-center md:items-start gap-x-5 gmd:ap-x-10 py-[15px] ">
           <div>
-            <Image width={90} height={90} src={logo} alt="Logo" />
+            <Link href="/">
+              <Image width={90} height={90} src={logo} alt="Logo" />
+            </Link>
           </div>
           <div className="flex flex-col flex-grow gap-y-[10px] ">
             <div className="flex items-center justify-end md:justify-between">
@@ -123,7 +165,10 @@ const Header = () => {
               <div className="w-[250px] hidden lg:flex"></div>
             </div>
           </div>
-          <div className="text-2xl flex md:hidden items-center" onClick={showDrawer}>
+          <div
+            className="text-2xl flex md:hidden items-center"
+            onClick={showDrawer}
+          >
             <HiOutlineMenu className="cursor-pointer" />
           </div>
         </div>
@@ -135,8 +180,10 @@ const Header = () => {
             <li className="py-5 px-[10px]">
               <Link href={"/library"}>Legal library</Link>
             </li>
-            <li className="py-5 px-[10px]">
-              <Link href={"/services"}>Services</Link>
+            <li className="py-5 px-[10px] relative">
+              <Dropdown menu={{ items }} placement="bottom" overlayStyle={{borderBottom:"5px", borderColor:"#008251"}}>
+                <Link href={"/services"}>Services</Link>
+              </Dropdown>
             </li>
             <li className="py-5 px-[10px]">
               <Link href={"/resources"}>Document samples</Link>

@@ -20,6 +20,18 @@
   border: 1px solid #ffffff !important;
 }
 
+/* Header style */
+
+.sub-menu {
+  background-color: #fff;
+  display: grid;
+  grid-template-columns: repeat(4, minmax(100px, 200px));
+
+  & li a {
+    color: #000;
+  }
+}
+
 /* Home page styles */
 
 .bg-clip {
@@ -29,7 +41,7 @@
   clip-path: inset(0 -100vmax);
 }
 
- .box_shadow {
+.box_shadow {
   box-shadow: 0 2px 20px black;
 }
 
@@ -170,8 +182,10 @@ form {
     }
   }
 
-  &:invalid + .formErrorText {
-    display: block;
+  &:user-invalid {
+    .formErrorText {
+      display: block;
+    }
   }
 }
 
@@ -209,7 +223,7 @@ form {
 
   .contact_info-text {
     position: relative;
-  
+
     &::before {
       content: "";
       width: 300px;
@@ -229,7 +243,7 @@ form {
       text-transform: capitalize;
       transition: all 0.3s;
       z-index: 1;
-  
+
       &::before {
         content: "";
         border: 1px solid #ffffff;
@@ -239,7 +253,7 @@ form {
         top: -8px;
         width: 100%;
       }
-  
+
       &::after {
         content: "";
         background-color: #ffffff;
@@ -251,18 +265,17 @@ form {
         z-index: -1;
         transition: all 0.3s;
       }
-  
+
       &:hover {
         color: #cdb091;
         padding: 15px 55px 17px;
-  
+
         &::after {
           height: 100%;
         }
       }
     }
   }
-
 }
 
 @media (min-width: 768px) {

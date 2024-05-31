@@ -12,6 +12,7 @@ const MainForm = () => {
           <input
             type="text"
             placeholder="Your Name"
+            required
             className="p-[15px] mb-5 w-full bg-transparent border border-[#dddddd] text-white placeholder:text-white text-xl focus:outline-none"
           />
           <div className="formErrorText">The name field is required.</div>
@@ -20,6 +21,7 @@ const MainForm = () => {
           <input
             type="email"
             placeholder="Your Email"
+            required
             className="p-[15px] mb-5 w-full bg-transparent border border-[#dddddd] text-white placeholder:text-white text-xl focus:outline-none"
           />
           <div className="formErrorText">The email field is required.</div>
@@ -28,6 +30,7 @@ const MainForm = () => {
           <input
             type="tel"
             placeholder="Your Phone"
+            required
             className="p-[15px] mb-5 w-full bg-transparent border border-[#dddddd] text-white placeholder:text-white text-xl focus:outline-none"
           />
           <div className="formErrorText">The phone field is required.</div>
