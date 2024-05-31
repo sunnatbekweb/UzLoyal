@@ -10,11 +10,22 @@ import { IoHomeOutline } from "react-icons/io5";
 import { TbMailOpened } from "react-icons/tb";
 import { TfiHeadphoneAlt } from "react-icons/tfi";
 import { IoIosClock } from "react-icons/io";
-import Image from "next/image";
+import initTranslations from "../i18n";
+import TranslationsProvider from "@/srccomponents/TranslationsProvider";
 
-export default function Home() {
+interface HomeProps {
+  params: {
+    locale: string;
+  };
+}
+
+const i18namespaces = ["header"]
+
+export default async function Home({ params: { locale } }: HomeProps) {
+  const {t,resources} = await initTranslations(locale, i18namespaces);
   return (
     <>
+      <TranslationsProvider resources={resources} locale={locale} namespaces={i18namespaces}>
       <Header />
       <main className="mt-[120px] md:pt-[68px]">
         <section id="hero">
@@ -35,12 +46,12 @@ export default function Home() {
           <div className="container">
             <div className="mb-[60px]">
               <span className="text-[#cdb091] text-[30px] font-semibold text-center block">
-                Articles
+                {t("header:about")}
               </span>
               <h2 className="articles_title">Latest Article Update</h2>
             </div>
             <div className="">
-              <CardSlider/>
+              <CardSlider />
             </div>
           </div>
         </section>
@@ -63,7 +74,7 @@ export default function Home() {
                   </p>
                   <br />
                   <p>
-                  &nbsp;&nbsp;&nbsp; You can always be sure that your case is being handled by a professional who specializes in providing legal services to businesses, has sufficient knowledge and experience in this area, is equally well versed in economics and law, and knows all the intricacies of organizing and running a business.
+                    &nbsp;&nbsp;&nbsp; You can always be sure that your case is being handled by a professional who specializes in providing legal services to businesses, has sufficient knowledge and experience in this area, is equally well versed in economics and law, and knows all the intricacies of organizing and running a business.
                   </p>
                 </article>
               </div>
@@ -178,6 +189,8 @@ export default function Home() {
         </section>
       </main>
       <Footer />
+      </TranslationsProvider>
+    
     </>
   );
 }
