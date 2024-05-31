@@ -192,11 +192,12 @@ form {
 /* Service page styles */
 
 .service-fon {
-  background-image: url("/loyal-img.jpg");
+  background-image: url("../../public/pages\ img.jpg");
   width: 100%;
   height: 400px;
   background-size: cover;
   background-repeat: no-repeat;
+  margin-top:-2px;
 }
 
 /* Libraray page styles */
